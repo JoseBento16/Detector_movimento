@@ -1,0 +1,55 @@
+REQUISITOS PARA EXECUTAR O PROJETO detecto_movimento
+
+1. DESCRIÇÃO
+Este projeto utiliza visão computacional para detectar movimento em tempo real
+usando a câmera do computador, através da biblioteca OpenCV em Python.
+
+--------------------------------------------------
+2. REQUISITOS DO SISTEMA
+- Sistema Operacional: Windows, Linux ou macOS
+- Câmera funcional (webcam)
+- Acesso ao terminal (PowerShell, CMD ou Terminal)
+
+--------------------------------------------------
+3. VERSÃO DO PYTHON
+- Python 3.8 ou superior
+
+Para verificar a versão:
+python --version
+
+--------------------------------------------------
+4. BIBLIOTECAS NECESSÁRIAS
+Instalar usando o pip:
+
+python -m pip install opencv-python
+python -m pip install numpy
+
+--------------------------------------------------
+5. COMO EXECUTAR O PROJETO
+
+1) Acesse a pasta do projeto:
+cd detecto_movimento
+
+2) Execute o arquivo principal:
+python detector_movimento.py
+
+--------------------------------------------------
+6. COMO FINALIZAR O PROGRAMA
+- Com a janela da câmera aberta, pressione a tecla:
+q
+
+--------------------------------------------------
+7. POSSÍVEIS PROBLEMAS
+
+- Erro: ModuleNotFoundError: No module named 'cv2'
+  Solução:
+  python -m pip install opencv-python
+
+- A câmera não abre:
+  Tente alterar no código:
+  cv2.VideoCapture(0) para cv2.VideoCapture(1)
+
+--------------------------------------------------
+8. OBSERVAÇÃO
+Este projeto é destinado para fins educacionais e estudos iniciais
+em visão computacional com OpenCV.
